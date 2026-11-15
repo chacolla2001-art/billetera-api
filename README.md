@@ -53,4 +53,4 @@ tests/             pruebas de punta a punta con base en memoria
 Autenticación con OAuth2/JWT, migraciones con Alembic, conversión de moneda con tipo de cambio y reportes de conciliación.
 
 ---
-Proyecto de portafolio desarrollado con asistencia de herramientas de IA. Licencia MIT.
+Licencia MIT.
