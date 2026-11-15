@@ -1,5 +1,9 @@
 # 💳 Billetera API
 
+> 🇬🇧 [English version](README.en.md)
+
+![Documentación interactiva de la API (Swagger UI)](docs/captura.png)
+
 API REST de una billetera digital: cuentas en bolivianos o dólares, depósitos, retiros y **transferencias atómicas** entre cuentas, con **límite diario**, **idempotencia** y un libro de movimientos inmutable.
 
 *Digital wallet REST API (FastAPI + SQLAlchemy): atomic transfers, idempotency keys, daily limits, integer-cent money handling and an immutable ledger.*
@@ -13,13 +17,13 @@ El manejo de dinero tiene trampas clásicas que este proyecto resuelve:
 - **Reglas de negocio:** saldo nunca negativo (también como restricción de la base), misma moneda en transferencias y límite diario de 5.000 en egresos.
 
 ## Tecnología
-Python 3.12, FastAPI, SQLAlchemy 2 (ORM), Pydantic 2 (validación), SQLite o PostgreSQL, pytest y GitHub Actions. Imagen Docker incluida.
+Python 3.12, FastAPI, SQLAlchemy 2 (ORM), Pydantic 2 (validación), SQLite o PostgreSQL y pytest. Imagen Docker incluida.
 
 ## Cómo correrlo
 ```bash
 pip install -r requirements.txt
 uvicorn app.main:app --reload     # http://localhost:8000/docs  (documentación interactiva)
-pytest -q                         # pruebas
+pytest -q                         # 11 pruebas
 ```
 Con Docker: `docker build -t billetera . && docker run -p 8000:8000 billetera`.
 Para PostgreSQL: `DATABASE_URL=postgresql+psycopg://usuario:clave@host/db` (requiere instalar el controlador).
