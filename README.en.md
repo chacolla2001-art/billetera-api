@@ -1,6 +1,6 @@
-# 💳 Wallet API
+# Wallet API
 
-> 🇪🇸 [Versión en español](README.md)
+> [Versión en español](README.md)
 
 ![Interactive API documentation (Swagger UI)](docs/captura.png)
 

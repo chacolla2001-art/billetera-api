@@ -1,6 +1,6 @@
-# 💳 Billetera API
+# Billetera API
 
-> 🇬🇧 [English version](README.en.md)
+> [English version](README.en.md)
 
 ![Documentación interactiva de la API (Swagger UI)](docs/captura.png)
 
